@@ -16,6 +16,36 @@ class Cube {
     }
 }
 
+class Triangle {
+
+    constructor(length,height,width){
+        this.length = length;
+        this.height = height;
+        this.width = width
+    }
+
+    getSideLength (){
+        return this.length;
+    }
+    
+    getSideHeight (){
+        return this.height;
+    }
+
+    getSideWidth (){
+        return this.width;
+    }
+
+    getSurfaceArea (){
+        return (this.length * this.height) / 2;
+    }
+
+    getVolume () {
+        return 1/2 * (this.length * this.height * this.width);
+    }
+}
+
 module.exports = {
-    Cube:Cube
+    Cube:Cube,
+    Triangle:Triangle
 }
